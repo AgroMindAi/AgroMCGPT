@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<title>AgroMCGPT - Регистрация</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Добре дошли в AgroMCGPT</h1>
+<form method="POST" action="/register">
+  <label>Пълно име: <input type="text" name="fullName" required></label><br>
+  <label>Имейл: <input type="email" name="email" required></label><br>
+  <label>Телефон: <input type="tel" name="phone"></label><br>
+  <fieldset>
+    <legend>Сектор на земеделието (изберете всички приложими):</legend>
+    <label><input type="checkbox" name="sectors" value="Растениевъдство"> Растениевъдство</label><br>
+    <label><input type="checkbox" name="sectors" value="Животновъдство"> Животновъдство</label><br>
+    <label><input type="checkbox" name="sectors" value="Лозарство"> Лозарство</label><br>
+    <label><input type="checkbox" name="sectors" value="Градинарство"> Градинарство</label><br>
+    <label><input type="checkbox" name="sectors" value="Аквакултури"> Аквакултури</label><br>
+    <label><input type="checkbox" name="sectors" value="Пчеларство"> Пчеларство</label><br>
+    <label><input type="checkbox" name="sectors" value="Друг"> Друг:</label>
+    <input type="text" name="otherSector" placeholder="Опишете">
+  </fieldset>
+  <label>Кои функционалности биха били най-ценни за Вас и кои от съществуващите характеристики предизвикват най-голям ентусиазъм във Вас?<br>
+    <textarea name="features" required></textarea>
+  </label><br>
+  <label>Допълнителна информация:<br>
+    <textarea name="extra"></textarea>
+  </label><br>
+  <button type="submit">Изпрати</button>
+</form>
+</body>
+</html>
